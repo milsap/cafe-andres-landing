@@ -3,12 +3,10 @@
 Landing page de ejemplo para una cafetería ficticia en **Portoviejo, Ecuador**.
 Proyecto de portafolio: plantilla reutilizable para cualquier negocio local cambiando un solo archivo.
 
-🔗 **Demo en vivo:** https://cafe-andres-landing.vercel.app <!-- actualiza con tu URL de Vercel -->
-
-![Captura de Café Andrés en escritorio](docs/captura-escritorio.png)
+🔗 **Demo en vivo:** https://cafe-andres-landing.vercel.app
 
 <p align="center">
-  <img src="docs/captura-movil.png" alt="Captura de Café Andrés en móvil" width="280" />
+  <img src="docs/captura-movil.png" alt="Captura de Café Andrés en móvil" width="320" />
 </p>
 
 ## ✨ Características

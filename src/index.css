@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-crema: #faf6f0;
+  --color-arena: #f1e6d6;
+  --color-cafe: #4a2c1f;
+  --color-cafe-claro: #6b4532;
+  --color-caramelo: #c8874a;
+  --color-oliva: #6f7a4f;
+  --color-whatsapp: #25d366;
+
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  @apply bg-crema text-cafe font-sans antialiased;
+}
+
+/* Animación de aparición al hacer scroll (ver useReveal.js) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+  transition-delay: var(--delay, 0ms);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
